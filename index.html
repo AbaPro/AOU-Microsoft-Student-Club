@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="AOU Microsoft Student Club" />
     <meta name="author" content="AOU Microsoft Student Club">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
     <title>Microsoft Student Club AOU</title>
 
@@ -27,664 +23,528 @@
     <link rel="stylesheet" href="assets/css/owl.css" />
 
     <!-- forms -->
-    <link
-      rel="stylesheet"
-      href="https://s.pageclip.co/v1/pageclip.css"
-      media="screen"
-    />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
 
     <style>
-      :root {
-        --MLSA-Dark-color: #203a61;
-        --MLSA-Light-color: #4fe4fd;
-        --MLSA-Blue-color: #0078d4;
-        --MLSA-Blue-Light: rgba(0, 120, 212, 0.3);
+        :root {
+            --MLSA-Dark-color: #203a61;
+            --MLSA-Light-color: #4fe4fd;
+            --MLSA-Blue-color: #0078d4;
+            --MLSA-Blue-Light: rgba(0, 120, 212, 0.3);
 
-        --accent-color: #9b68ca;
+            --accent-color: #9b68ca;
 
-        --blur-color-1-start: rgba(155, 104, 202, 0.65);
-        --blur-color-1-middle: rgba(155, 104, 202, 0.25);
-        --blur-color-1-end: rgba(155, 104, 202, 0);
+            --blur-color-1-start: rgba(155, 104, 202, 0.65);
+            --blur-color-1-middle: rgba(155, 104, 202, 0.25);
+            --blur-color-1-end: rgba(155, 104, 202, 0);
 
-        --blur-color-2-start: rgba(79, 228, 253, 0.65);
-        --blur-color-2-middle: rgba(79, 228, 253, 0.25);
-        --blur-color-2-end: rgba(79, 228, 253, 0);
+            --blur-color-2-start: rgba(79, 228, 253, 0.65);
+            --blur-color-2-middle: rgba(79, 228, 253, 0.25);
+            --blur-color-2-end: rgba(79, 228, 253, 0);
 
-        --const-ratio: 0.1;
+            --const-ratio: 0.1;
 
-        --blur-circle-radius-1: calc(
-          var(--const-ratio) * 1280px + (1 - var(--const-ratio)) * 38vw
-        );
-        --blur-circle-radius-2: calc(
-          var(--const-ratio) * 1280px + (1 - var(--const-ratio)) * 57vw
-        );
-      }
+            --blur-circle-radius-1: calc(var(--const-ratio) * 1280px + (1 - var(--const-ratio)) * 38vw);
+            --blur-circle-radius-2: calc(var(--const-ratio) * 1280px + (1 - var(--const-ratio)) * 57vw);
+        }
 
-      .blurry-background {
-        background: radial-gradient(
-            var(--blur-circle-radius-1) var(--blur-circle-radius-1) at 25vw 0rem,
-            var(--blur-color-1-start) 15%,
-            var(--blur-color-1-middle) 50%,
-            var(--blur-color-1-end)
-          ),
-          radial-gradient(
-            var(--blur-circle-radius-1) var(--blur-circle-radius-1) at 110vw
-              28rem,
-            var(--blur-color-2-start) 5%,
-            var(--blur-color-2-middle) 60%,
-            var(--blur-color-2-end)
-          ),
-          radial-gradient(
-            var(--blur-circle-radius-2) var(--blur-circle-radius-2) at -30vw 62rem,
-            var(--blur-color-2-start) 15%,
-            var(--blur-color-2-middle) 50%,
-            var(--blur-color-2-end)
-          ),
-          radial-gradient(
-            var(--blur-circle-radius-2) var(--blur-circle-radius-2) at 100vw
-              80rem,
-            var(--blur-color-1-start) 15%,
-            var(--blur-color-1-middle) 50%,
-            var(--blur-color-1-end)
-          ),
-          #224881 !important;
-      }
+        .blurry-background {
+            background: radial-gradient(var(--blur-circle-radius-1) var(--blur-circle-radius-1) at 25vw 0rem,
+                    var(--blur-color-1-start) 15%,
+                    var(--blur-color-1-middle) 50%,
+                    var(--blur-color-1-end)),
+                radial-gradient(var(--blur-circle-radius-1) var(--blur-circle-radius-1) at 110vw 28rem,
+                    var(--blur-color-2-start) 5%,
+                    var(--blur-color-2-middle) 60%,
+                    var(--blur-color-2-end)),
+                radial-gradient(var(--blur-circle-radius-2) var(--blur-circle-radius-2) at -30vw 62rem,
+                    var(--blur-color-2-start) 15%,
+                    var(--blur-color-2-middle) 50%,
+                    var(--blur-color-2-end)),
+                radial-gradient(var(--blur-circle-radius-2) var(--blur-circle-radius-2) at 100vw 80rem,
+                    var(--blur-color-1-start) 15%,
+                    var(--blur-color-1-middle) 50%,
+                    var(--blur-color-1-end)),
+                #224881 !important;
+        }
+
+        .our-portfolio:after {
+            z-index: -1;
+        }
+
+        .our-portfolio:before {
+            z-index: 0;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
     </div>
     <!-- ***** Preloader End ***** -->
 
     <!-- Pre-header Starts -->
     <div class="pre-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-sm-8 col-7">
-            <ul class="info">
-              <li>
-                <a href="#"
-                  ><i class="fa fa-envelope"></i>digimedia@company.com</a
-                >
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-phone"></i>010-020-0340</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-4 col-5">
-            <ul class="social-media">
-              <li>
-                <a href="https://www.facebook.com/aoumsc" target="_blank"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/aoumsc"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-              </li>
-              <li id="moon" class="pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16"
-                  width="15"
-                  viewBox="0 0 384 512"
-                  class="mx-3"
-                >
-                  <!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                  <path
-                    d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
-                  />
-                </svg>
-              </li>
-              <li id="sun" class="pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16"
-                  width="16"
-                  viewBox="0 0 512 512"
-                >
-                  <!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                  <path
-                    d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8 col-7">
+                    <ul class="info">
+                        <li>
+                            <a href="#"><i class="fa fa-envelope"></i>digimedia@company.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-phone"></i>010-020-0340</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-5">
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://www.facebook.com/aoumsc" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/aoumsc"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li id="moon" class="pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15" viewBox="0 0 384 512"
+                                class="mx-3">
+                                <!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+                            </svg>
+                        </li>
+                        <li id="sun" class="pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- Pre-header End -->
 
     <!-- ***** Header Area Start ***** -->
-    <header
-      class="header-area header-sticky wow slideInDown"
-      data-wow-duration="0.75s"
-      data-wow-delay="0s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img height="75px" src="assets/images/logo.png" alt="" />
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section">
-                  <a href="#top" class="active">Home</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="https://www.ms-learn-aou.com/">Materials</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#services">Tracks</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#portfolio">our team</a>
-                </li>
-                <li class="scroll-to-section"><a href="#blog">Posts</a></li>
-                <li class="scroll-to-section">
-                  <div class="border-first-button">
-                    <a href="#contact">Contact</a>
-                  </div>
-                </li>
-              </ul>
-              <a class="menu-trigger">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img height="75px" src="assets/images/logo.png" alt="" />
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section">
+                                <a href="#top" class="active">Home</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="https://www.ms-learn-aou.com/">Materials</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#services">Tracks</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#portfolio">our team</a>
+                            </li>
+                            <li class="scroll-to-section"><a href="#blog">Posts</a></li>
+                            <li class="scroll-to-section">
+                                <div class="border-first-button">
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <div
-      class="main-banner wow fadeIn"
-      id="top"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-6 align-self-center">
-                <div
-                  class="left-content show-up header-text wow fadeInLeft"
-                  data-wow-duration="1s"
-                  data-wow-delay="1s"
-                >
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <h6>Microsoft Student Club - AOU</h6>
-                      <h2>
-                        <span style="color: #726ae3">H</span>andWorking
-                        <span style="color: #726ae3">G</span>et
-                        <span style="color: #726ae3">I</span>nformed
-                      </h2>
-                      <p>
-                        Join Microsoft Student Club — your gateway to a thriving
-                        student community. Connect, engage, and grow with us as
-                        we embrace the diversity of student life.
-                      </p>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h6>Microsoft Student Club - AOU</h6>
+                                        <h2>
+                                            <span style="color: #726ae3">H</span>andWorking
+                                            <span style="color: #726ae3">G</span>et
+                                            <span style="color: #726ae3">I</span>nformed
+                                        </h2>
+                                        <p>
+                                            Join Microsoft Student Club — your gateway to a thriving
+                                            student community. Connect, engage, and grow with us as
+                                            we embrace the diversity of student life.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="border-first-button scroll-to-section">
+                                            <a href="#about">About Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="assets/images/Working-bro.svg" alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-12">
-                      <div class="border-first-button scroll-to-section">
-                        <a href="#about">About Us</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div
-                  class="right-image wow fadeInRight"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
-                >
-                  <img src="assets/images/Working-bro.svg" alt="" />
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div id="about" class="about section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-6">
-                <div
-                  class="about-left-image wow fadeInLeft"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
-                >
-                  <img src="assets/images/Questions-pana.svg" alt="" />
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="assets/images/Questions-pana.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
+                            <div class="about-right-content">
+                                <div class="section-heading">
+                                    <h6>About Us</h6>
+                                    <h4>Who is <em>Microsoft</em> Student Club</h4>
+                                    <div class="line-dec"></div>
+                                </div>
+                                <p>
+                                    In Microsoft Student Club where passion meets purpose. We're
+                                    not just a club, we're a thriving community where
+                                    individuals come together to explore, learn, and support
+                                    each other.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s"
+                                            data-wow-delay="0s">
+                                            <div class="progress" data-percentage="90">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">
+                                                    <div>
+                                                        90%<br />
+                                                        <span>Learning</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s"
+                                            data-wow-delay="0s">
+                                            <div class="progress" data-percentage="40">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">
+                                                    <div>
+                                                        40%<br />
+                                                        <span>Coding</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s"
+                                            data-wow-delay="0s">
+                                            <div class="progress" data-percentage="20">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">
+                                                    <div>
+                                                        20%<br />
+                                                        <span>Animation</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div
-                class="col-lg-6 align-self-center wow fadeInRight"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <div class="about-right-content">
-                  <div class="section-heading">
-                    <h6>About Us</h6>
-                    <h4>Who is <em>Microsoft</em> Student Club</h4>
-                    <div class="line-dec"></div>
-                  </div>
-                  <p>
-                    In Microsoft Student Club where passion meets purpose. We're
-                    not just a club, we're a thriving community where
-                    individuals come together to explore, learn, and support
-                    each other.
-                  </p>
-                  <div class="row">
-                    <div class="col-lg-4 col-sm-4">
-                      <div
-                        class="skill-item first-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
-                      >
-                        <div class="progress" data-percentage="90">
-                          <span class="progress-left">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <span class="progress-right">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <div class="progress-value">
-                            <div>
-                              90%<br />
-                              <span>Learning</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4">
-                      <div
-                        class="skill-item second-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
-                      >
-                        <div class="progress" data-percentage="40">
-                          <span class="progress-left">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <span class="progress-right">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <div class="progress-value">
-                            <div>
-                              40%<br />
-                              <span>Coding</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4">
-                      <div
-                        class="skill-item third-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
-                      >
-                        <div class="progress" data-percentage="20">
-                          <span class="progress-left">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <span class="progress-right">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <div class="progress-value">
-                            <div>
-                              20%<br />
-                              <span>Animation</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div id="services" class="services section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div
-              class="section-heading wow fadeInDown"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <h6>Our Tracks</h6>
-              <h4>What We <em>Provides</em></h4>
-              <div class="line-dec"></div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="naccs">
-              <div class="grid">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="menu">
-                      <div class="first-thumb active">
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-01.png"
-                              alt=""
-                          /></span>
-                          AI
-                        </div>
-                      </div>
-                      <div>
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-02.png"
-                              alt=""
-                          /></span>
-                          Cyber Security
-                        </div>
-                      </div>
-                      <div>
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-03.png"
-                              alt=""
-                          /></span>
-                          Data Science
-                        </div>
-                      </div>
-                      <div>
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-04.png"
-                              alt=""
-                          /></span>
-                          Web
-                        </div>
-                      </div>
-                      <!-- <div class="last-thumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h6>Our Tracks</h6>
+                        <h4>What We <em>Provides</em></h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="naccs">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="menu">
+                                        <div class="first-thumb active">
+                                            <div class="thumb">
+                                                <span class="icon"><img src="assets/images/service-icon-01.png"
+                                                        alt="" /></span>
+                                                AI
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="assets/images/service-icon-02.png"
+                                                        alt="" /></span>
+                                                Cyber Security
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="assets/images/service-icon-03.png"
+                                                        alt="" /></span>
+                                                Data Science
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="assets/images/service-icon-04.png"
+                                                        alt="" /></span>
+                                                Web
+                                            </div>
+                                        </div>
+                                        <!-- <div class="last-thumb">
                       <div class="thumb">                 
                         <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
                         Traveling
                       </div>
                     </div> -->
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <ul class="nacc">
-                      <li class="active">
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>AI</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
+                                    </div>
                                 </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Cyber Security</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image-02.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Data Science</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image-03.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Web</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image-04.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- <li>
+                                <div class="col-lg-12">
+                                    <ul class="nacc">
+                                        <li class="active">
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>AI</h4>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt ut labore et dolore kengan darwin
+                                                                    doerski token. dover lipsum lorem and the
+                                                                    others.
+                                                                </p>
+                                                                <div class="ticks-list">
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                </div>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="assets/images/services-image.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Cyber Security</h4>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt ut labore et dolore kengan darwin
+                                                                    doerski token. dover lipsum lorem and the
+                                                                    others.
+                                                                </p>
+                                                                <div class="ticks-list">
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                </div>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="assets/images/services-image-02.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Data Science</h4>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt ut labore et dolore kengan darwin
+                                                                    doerski token. dover lipsum lorem and the
+                                                                    others.
+                                                                </p>
+                                                                <div class="ticks-list">
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                </div>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="assets/images/services-image-03.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Web</h4>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt ut labore et dolore kengan darwin
+                                                                    doerski token. dover lipsum lorem and the
+                                                                    others.
+                                                                </p>
+                                                                <div class="ticks-list">
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data
+                                                                        Info</span>
+                                                                    <span><i class="fa fa-check"></i> SEO
+                                                                        Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Optimized
+                                                                        Template</span>
+                                                                </div>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sedr do eiusmod deis tempor
+                                                                    incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="assets/images/services-image-04.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -707,517 +567,406 @@
                         </div>
                       </div>
                     </li> -->
-                    </ul>
-                  </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div id="free-quote" class="free-quote blurry-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 offset-lg-4">
-            <div
-              class="section-heading wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <h6>Join our tracks</h6>
-              <h4>Grow With Us Now</h4>
-              <div class="line-dec"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6>Join our tracks</h6>
+                        <h4>Grow With Us Now</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <form id="search" action="https://send.pageclip.co/SP5oYWexhNduGVze3WAuRKSAeIIVGCZX/join-us"
+                        class="pageclip-form" method="post">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4">
+                                <fieldset>
+                                    <input type="email" name="email" class="email" placeholder="Your Email Address..."
+                                        autocomplete="on" required />
+                                </fieldset>
+                            </div>
+
+                            <div class="d-flex align-items-center col-lg-4 col-sm-4">
+                                <fieldset>
+                                    <select name="track" class="form-control" required>
+                                        <option value="">Choose a Track</option>
+                                        <option value="ai">AI</option>
+                                        <option value="cyber-security">Cyber Security</option>
+                                        <option value="data-science">Data Science</option>
+                                        <option value="web">Web</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-4">
+                                <fieldset>
+                                    <button type="submit" class="main-button pageclip-form__submit">
+                                        Join Now
+                                    </button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                    <p style="color: white">write your email and we will contact you</p>
+                </div>
             </div>
-          </div>
-          <div
-            class="col-lg-8 offset-lg-2 wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay="0.8s"
-          >
-            <form
-              id="search"
-              action="https://send.pageclip.co/SP5oYWexhNduGVze3WAuRKSAeIIVGCZX/join-us"
-              class="pageclip-form"
-              method="post"
-            >
-              <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                  <fieldset>
-                    <input
-                      type="email"
-                      name="email"
-                      class="email"
-                      placeholder="Your Email Address..."
-                      autocomplete="on"
-                      required
-                    />
-                  </fieldset>
-                </div>
-
-                <div class="d-flex align-items-center col-lg-4 col-sm-4">
-                  <fieldset>
-                    <select name="track" class="form-control" required>
-                      <option value="">Choose a Track</option>
-                      <option value="ai">AI</option>
-                      <option value="cyber-security">Cyber Security</option>
-                      <option value="data-science">Data Science</option>
-                      <option value="web">Web</option>
-                    </select>
-                  </fieldset>
-                </div>
-
-                <div class="col-lg-4 col-sm-4">
-                  <fieldset>
-                    <button
-                      type="submit"
-                      class="main-button pageclip-form__submit"
-                    >
-                      Join Now
-                    </button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-            <p style="color: white">write your email and we will contact you</p>
-          </div>
         </div>
-      </div>
     </div>
 
     <div id="portfolio" class="our-portfolio section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div
-              class="section-heading wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <h6>our core team</h6>
-              <h4>Meet MSC core <em>team</em></h4>
-              <div class="line-dec"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6>our core team</h6>
+                        <h4>Meet MSC core <em>team</em></h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div
-        class="container-fluid wow fadeIn"
-        data-wow-duration="1s"
-        data-wow-delay="0.7s"
-      >
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="loop owl-carousel">
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/1_head.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>President</h4>
-                      <span>Abdallah Zidan</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/2_coHead.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Vice President</h4>
-                      <span>Habiba Tarek</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img
-                        src="assets/images/core_team/3_techHead.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="down-content">
-                      <h4>Technical Head</h4>
-                      <span>David Nabil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/4_techCo.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Technical Co-Head</h4>
-                      <span>Mohammed Salah</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/5-hrHead.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>HR & PR Head</h4>
-                      <span>Peter Hosny</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/6-hrCo.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>HT Co-Head</h4>
-                      <span>Salma Alaa</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/7-prCo.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>PR Co-Head</h4>
-                      <span>Yousef Ragaee</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/core_team/8-prCo.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>PR Co-Head</h4>
-                      <span>Leen Omran</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img
-                        src="assets/images/core_team/9_mediaHead.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="down-content">
-                      <h4>SM Marketing Head</h4>
-                      <span>Fady Sameh</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img
-                        src="assets/images/core_team/10_mediaCo.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="down-content">
-                      <h4>Media Co-Head</h4>
-                      <span>Alaa Hamdi</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
+        <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+            <div class="d-flex flex-wrap justify-content-center ">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/1_head.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>President</h4>
+                                <span>Abdallah Zidan</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/2_coHead.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>Vice President</h4>
+                                <span>Habiba Tarek</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/3_techHead.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>Technical Head</h4>
+                                <span>David Nabil</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/4_techCo.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>Technical Co-Head</h4>
+                                <span>Mohammed Salah</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/5-hrHead.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>HR & PR Head</h4>
+                                <span>Peter Hosny</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/6-hrCo.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>HT Co-Head</h4>
+                                <span>Salma Alaa</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/7-prCo.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>PR Co-Head</h4>
+                                <span>Yousef Ragaee</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/8-prCo.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>PR Co-Head</h4>
+                                <span>Leen Omran</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/9_mediaHead.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>SM Marketing Head</h4>
+                                <span>Fady Sameh</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <img src="assets/images/core_team/10_mediaCo.jpg" alt="" />
+                            </div>
+                            <div class="down-content">
+                                <h4>Media Co-Head</h4>
+                                <span>Alaa Hamdi</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div id="blog" class="blog">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-4 offset-lg-4 wow fadeInDown"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="section-heading">
-              <h6>Recent News</h6>
-              <h4>Check Our Latest <em>Posts</em></h4>
-              <div class="line-dec"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="section-heading">
+                        <h6>Recent News</h6>
+                        <h4>Check Our Latest <em>Posts</em></h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="blog-post">
+                        <div class="thumb">
+                            <a target="_blank" href="https://www.facebook.com/events/1021867158930168?ref=newsfeed"><img
+                                    src="assets/images/posts/1_event.jpg" alt="" /></a>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Facebook Page</span>
+                            <span class="date">03 November 2023</span>
+                            <a target="_blank" href="https://www.facebook.com/events/1021867158930168?ref=newsfeed">
+                                <h4>It's time to reveal</h4>
+                            </a>
+                            <p>
+                                Microsoft Student Club <br />Microbond an extraordinary event
+                                meticulously organized by the Microsoft Student Club, aimed at
+                                fostering intellectual convergence among students from diverse
+                                academic backgrounds. This event boasts a stellar lineup of
+                                speakers representing the five faculties within our university
+                                – Computer science, Business administration, Graphic and
+                                multimedia design, and Media and mass communication.
+                            </p>
+                            <div class="border-first-button">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/events/1021867158930168?ref=newsfeed">Discover
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="blog-posts">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="post-item">
+                                    <div class="thumb">
+                                        <a href="#"><img style="width: 230px"
+                                                src="assets/images/posts/2_bootcamp.jpg" /></a>
+                                    </div>
+                                    <div class="right-content">
+                                        <span class="category">Instagram Page</span>
+                                        <span class="date">24 September 2021</span>
+                                        <a href="#">
+                                            <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, cocteturi adipiscing
+                                            eliterski.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="post-item">
+                                    <div class="thumb">
+                                        <a href="#"><img style="width: 240px"
+                                                src="assets/images/posts/3_lecture.jpg" /></a>
+                                    </div>
+                                    <div class="right-content">
+                                        <span class="category">Threads Channel</span>
+                                        <span class="date">24 September 2021</span>
+                                        <a href="#">
+                                            <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, cocteturi adipiscing
+                                            eliterski.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="post-item last-post-item">
+                                    <div class="thumb">
+                                        <a href="#"><img style="width: 230px"
+                                                src="assets/images/posts/4_stage.jpg" /></a>
+                                    </div>
+                                    <div class="right-content">
+                                        <span class="category">Twitter Account</span>
+                                        <span class="date">24 September 2021</span>
+                                        <a href="#">
+                                            <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, cocteturi adipiscing
+                                            eliterski.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div
-            class="col-lg-6 show-up wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="blog-post">
-              <div class="thumb">
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/events/1021867158930168?ref=newsfeed"
-                  ><img src="assets/images/posts/1_event.jpg" alt=""
-                /></a>
-              </div>
-              <div class="down-content">
-                <span class="category">Facebook Page</span>
-                <span class="date">03 November 2023</span>
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/events/1021867158930168?ref=newsfeed"
-                >
-                  <h4>It's time to reveal</h4>
-                </a>
-                <p>
-                  Microsoft Student Club <br />Microbond an extraordinary event
-                  meticulously organized by the Microsoft Student Club, aimed at
-                  fostering intellectual convergence among students from diverse
-                  academic backgrounds. This event boasts a stellar lineup of
-                  speakers representing the five faculties within our university
-                  – Computer science, Business administration, Graphic and
-                  multimedia design, and Media and mass communication.
-                </p>
-                <div class="border-first-button">
-                  <a
-                    target="_blank"
-                    href="https://www.facebook.com/events/1021867158930168?ref=newsfeed"
-                    >Discover More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="blog-posts">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-item">
-                    <div class="thumb">
-                      <a href="#"
-                        ><img
-                          style="width: 230px"
-                          src="assets/images/posts/2_bootcamp.jpg"
-                      /></a>
-                    </div>
-                    <div class="right-content">
-                      <span class="category">Instagram Page</span>
-                      <span class="date">24 September 2021</span>
-                      <a href="#">
-                        <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
-                      </a>
-                      <p>
-                        Lorem ipsum dolor sit amet, cocteturi adipiscing
-                        eliterski.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="post-item">
-                    <div class="thumb">
-                      <a href="#"
-                        ><img
-                          style="width: 240px"
-                          src="assets/images/posts/3_lecture.jpg"
-                      /></a>
-                    </div>
-                    <div class="right-content">
-                      <span class="category">Threads Channel</span>
-                      <span class="date">24 September 2021</span>
-                      <a href="#">
-                        <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
-                      </a>
-                      <p>
-                        Lorem ipsum dolor sit amet, cocteturi adipiscing
-                        eliterski.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="post-item last-post-item">
-                    <div class="thumb">
-                      <a href="#"
-                        ><img
-                          style="width: 230px"
-                          src="assets/images/posts/4_stage.jpg"
-                      /></a>
-                    </div>
-                    <div class="right-content">
-                      <span class="category">Twitter Account</span>
-                      <span class="date">24 September 2021</span>
-                      <a href="#">
-                        <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
-                      </a>
-                      <p>
-                        Lorem ipsum dolor sit amet, cocteturi adipiscing
-                        eliterski.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div id="contact" class="contact-us section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <div
-              class="section-heading wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <h6>Contact Us</h6>
-              <h4>Get In Touch With Us <em>Now</em></h4>
-              <div class="line-dec"></div>
-            </div>
-          </div>
-          <div
-            class="col-lg-12 wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.25s"
-          >
-            <form
-              id="contact"
-              action="https://send.pageclip.co/SP5oYWexhNduGVze3WAuRKSAeIIVGCZX/contact-us"
-              class="pageclip-form"
-              method="post"
-            >
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="contact-dec">
-                    <img src="assets/images/contact-dec.png" alt="" />
-                  </div>
-                </div>
-                <div class="col-lg-5">
-                  <div id="map">
-                    <iframe
-                      src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                      width="100%"
-                      height="636px"
-                      frameborder="0"
-                      style="border: 0"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="fill-form">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="info-post">
-                          <div class="icon">
-                            <img src="assets/images/email-icon.png" alt="" />
-                            <a href="mailto:MSC_AOU@outlook.com"
-                              >MSC_AOU@outlook.com</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="info-post">
-                          <div class="icon">
-                            <img src="assets/images/location-icon.png" alt="" />
-                            <a href="#">Arab Open University</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <input
-                            type="name"
-                            name="name"
-                            id="name"
-                            placeholder="Name"
-                            autocomplete="on"
-                            required
-                          />
-                        </fieldset>
-                        <fieldset>
-                          <input
-                            type="text"
-                            name="email"
-                            id="email"
-                            pattern="[^ @]*@[^ @]*"
-                            placeholder="Your Email"
-                            required=""
-                          />
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <textarea
-                            name="message"
-                            type="text"
-                            class="form-control"
-                            id="message"
-                            minlength="5"
-                            placeholder="Message"
-                            required=""
-                          ></textarea>
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-12">
-                        <fieldset>
-                          <button
-                            type="submit"
-                            id="form-submit"
-                            class="pageclip-form__submit main-button"
-                          >
-                            Send Message Now
-                          </button>
-                        </fieldset>
-                      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h6>Contact Us</h6>
+                        <h4>Get In Touch With Us <em>Now</em></h4>
+                        <div class="line-dec"></div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </form>
-          </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <form id="contact" action="https://send.pageclip.co/SP5oYWexhNduGVze3WAuRKSAeIIVGCZX/contact-us"
+                        class="pageclip-form" method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="contact-dec">
+                                    <img src="assets/images/contact-dec.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div id="map">
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        width="100%" height="636px" frameborder="0" style="border: 0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="fill-form">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="info-post">
+                                                <div class="icon">
+                                                    <img src="assets/images/email-icon.png" alt="" />
+                                                    <a href="mailto:MSC_AOU@outlook.com">MSC_AOU@outlook.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="info-post">
+                                                <div class="icon">
+                                                    <img src="assets/images/location-icon.png" alt="" />
+                                                    <a href="#">Arab Open University</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <input type="name" name="name" id="name" placeholder="Name"
+                                                    autocomplete="on" required />
+                                            </fieldset>
+                                            <fieldset>
+                                                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                                    placeholder="Your Email" required="" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <textarea name="message" type="text" class="form-control" id="message"
+                                                    minlength="5" placeholder="Message" required=""></textarea>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit"
+                                                    class="pageclip-form__submit main-button">
+                                                    Send Message Now
+                                                </button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright © 2024 . All Rights Reserved.</p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © 2024 . All Rights Reserved.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
     <!-- Scripts -->
@@ -1229,5 +978,6 @@
     <script src="assets/js/custom.js"></script>
     <!-- forms -->
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
