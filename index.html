@@ -68,12 +68,68 @@
                 #224881 !important;
         }
 
+        .facebook-btn {
+            display: inline-block;
+            background-color: #1877F2;
+            width: 24px;
+            height: 24px;
+            color: white;
+            border-radius: 6px;
+            font-size: 17px;
+            padding-top: 1px;
+            transition: all 0.1s linear;
+        }
+
+        .facebook-btn:hover {
+            color: white;
+            filter: brightness(1.12);
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            background-color: #0a66c2;
+            width: 24px;
+            height: 24px;
+            color: white;
+            border-radius: 6px;
+            font-size: 17px;
+            padding-top: 1px;
+            transition: all 0.1s linear;
+        }
+
+        .linkedin-btn:hover {
+            color: white;
+            filter: brightness(1.12);
+        }
+
         .our-portfolio:after {
             z-index: -1;
         }
 
         .our-portfolio:before {
             z-index: 0;
+        }
+
+        .member-socials {
+            text-align: center;
+            left: 0;
+            bottom: 2%;
+            position: absolute;
+            right: 0;
+        }
+
+        .portfolio-item {
+            position: relative;
+            min-width: 260px;
+            padding-bottom: 2%;
+        }
+
+        .portfolio-item .thumb img {
+            border-radius: 23px !important;
+        }
+        
+        .carousel-indicators button {
+            max-width: 6px;
         }
     </style>
 </head>
@@ -638,16 +694,216 @@
             </div>
         </div>
         <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-            <div class="d-flex flex-wrap justify-content-center ">
+            <div id="membersCarousel" class="carousel slide d-md-none" style="padding-bottom: 28px;">
+                <div class="carousel-indicators">
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="5"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="6"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="7"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="8"></button>
+                    <button type="button" style="background-color: #0003;" data-bs-target="#membersCarousel" data-bs-slide-to="9"></button>
+                  </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/1_head.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/2_coHead.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/3_techHead.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/4_techCo.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/5-hrHead.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/6-hrCo.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/7-prCo.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/8-prCo.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/9_mediaHead.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="assets/images/core_team/10_mediaCo.jpg" alt="" />
+                                </div>
+                                <div class="member-socials pt-0">
+                                    <a href="#" class="facebook-btn">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="linkedin-btn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#membersCarousel"
+                    data-bs-slide="prev">
+                    <i class="fa fa-chevron-left" style="font-size: 24px; color: #0003"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#membersCarousel"
+                    data-bs-slide="next">
+                    <i class="fa fa-chevron-right" style="font-size: 24px; color: #0003"></i>
+                </button>
+            </div>
+
+
+            <div class="d-none d-md-flex flex-wrap justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <a href="#">
                         <div class="portfolio-item">
                             <div class="thumb">
                                 <img src="assets/images/core_team/1_head.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>President</h4>
-                                <span>Abdallah Zidan</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -658,9 +914,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/2_coHead.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>Vice President</h4>
-                                <span>Habiba Tarek</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -671,9 +931,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/3_techHead.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>Technical Head</h4>
-                                <span>David Nabil</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -684,9 +948,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/4_techCo.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>Technical Co-Head</h4>
-                                <span>Mohammed Salah</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -697,9 +965,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/5-hrHead.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>HR & PR Head</h4>
-                                <span>Peter Hosny</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -710,9 +982,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/6-hrCo.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>HT Co-Head</h4>
-                                <span>Salma Alaa</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -723,9 +999,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/7-prCo.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>PR Co-Head</h4>
-                                <span>Yousef Ragaee</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -736,9 +1016,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/8-prCo.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>PR Co-Head</h4>
-                                <span>Leen Omran</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -749,9 +1033,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/9_mediaHead.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>SM Marketing Head</h4>
-                                <span>Fady Sameh</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -762,9 +1050,13 @@
                             <div class="thumb">
                                 <img src="assets/images/core_team/10_mediaCo.jpg" alt="" />
                             </div>
-                            <div class="down-content">
-                                <h4>Media Co-Head</h4>
-                                <span>Alaa Hamdi</span>
+                            <div class="member-socials pt-0">
+                                <a href="#" class="facebook-btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="linkedin-btn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                     </a>
